@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Experiment</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        transition: background-color 0.5s ease; /* Smooth transition for background color */
+    }
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+<center>
+    <h1>Calculator</h1>
+    <p>This is a "c" programming file that contains the code of a basic calculator.</p>
+<a href="calculator.txt"><button id:"colorbutton">Download</button></a></center>
+</div>
+
+
+<script>
+    // JavaScript to change the background color automatically
+    setInterval(changeBackgroundColor, 5000);
+
+    function changeBackgroundColor() {
+        // Generate a random color
+        var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        // Change the background color of the body
+        document.body.style.backgroundColor = randomColor;
+    }
+</script>
+
+</body>
+</html>
